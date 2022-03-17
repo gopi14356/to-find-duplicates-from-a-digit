@@ -1,0 +1,19 @@
+n=int(input())
+l=[]
+while n>0:
+    c=n%10
+    n=n//10
+    l.append(c)
+print(l)
+l.reverse()
+res=[]
+for i in l:
+    if i not in res:
+        res.append(i)
+print(res)
+k=len(res)
+print(k)
+s=0
+for i in range(0,k):
+    s=((10**1)*s)+res[i]
+print(s)
